@@ -1,7 +1,6 @@
 package com.gamingyoungpluh.meatupdate;
 
 
-import org.antlr.v4.parse.ANTLRParser.finallyClause_return;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

@@ -2,6 +2,8 @@ package com.gamingyoungpluh.meatupdate;
 
 
 
+import com.gamingyoungpluh.meatupdate.init.ItemInit;
+
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
@@ -20,7 +22,7 @@ public class meatupdate {
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
             // TODO Auto-generated method stub
-            return null;
+            return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
         }
         
     };

@@ -13,7 +13,7 @@ public class iteminit {
 			meatupdate.MEAT_ID);
 
 	public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
-			() -> new Item(new Item.Properties().tab(meatupdate.MEAT_TAB).food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5f).build())
+			() -> new Item(new Item.Properties().tab(meatupdate.MEAT_TAB).food(new FoodProperties.Builder().nutrition(-10).saturationMod(0.5f).build())
       ));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {

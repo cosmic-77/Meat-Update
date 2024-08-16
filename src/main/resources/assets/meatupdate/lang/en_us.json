@@ -3,7 +3,7 @@
     "item.meatupdate.silica_packet": "Silica Packet",
 
     "itemGroup.meatupdateblocks" : "Meat Update Blocks",
-    "item.meatupdate.ground_meat_block" : "Block of Ground Meat"
+    "block.meatupdate.ground_meat_block" : "Block of Ground Meat"
 
 
 

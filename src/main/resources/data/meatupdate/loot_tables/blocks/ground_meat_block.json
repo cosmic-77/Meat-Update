@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "meatupdate:ground_meat_block"
+
+
+
+
+
+
+                }
+
+
+
+
+            ]
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+    ]
+
+
+
+    
+}

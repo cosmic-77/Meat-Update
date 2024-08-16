@@ -2,7 +2,7 @@ package com.gamingyoungpluh.meatupdate.init;
 import com.google.common.base.Supplier;
 import com.gamingyoungpluh.meatupdate.meatupdate;
 
-
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,7 +13,8 @@ public class iteminit {
 			meatupdate.MEAT_ID);
 
 	public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
-			() -> new Item(new Item.Properties().tab(meatupdate.MEAT_TAB)));
+			() -> new Item(new Item.Properties().tab(meatupdate.MEAT_TAB).food(new FoodProperties.Builder().nutrition(10).saturationMod(0.5f).build())
+      ));
 
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item) {
 		return ITEMS.register(name, item);

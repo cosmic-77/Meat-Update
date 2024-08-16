@@ -2,7 +2,7 @@ package com.gamingyoungpluh.meatupdate;
 
 
 
-import com.gamingyoungpluh.meatupdate.init.ItemInit;
+import com.gamingyoungpluh.meatupdate.init.iteminit;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -21,8 +21,8 @@ public class meatupdate {
         @Override
         @OnlyIn(Dist.CLIENT)
         public ItemStack makeIcon() {
-            // TODO Auto-generated method stub
-            return new ItemStack(ItemInit.EXAMPLE_ITEM.get());
+            
+            return new ItemStack(iteminit.EXAMPLE_ITEM.get());
         }
         
     };

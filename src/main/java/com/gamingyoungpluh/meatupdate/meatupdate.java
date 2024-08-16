@@ -9,7 +9,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Mod;;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;;
 
 @Mod("meatupdate")
 public class meatupdate {
@@ -27,9 +29,15 @@ public class meatupdate {
         
     };
 
-
     public meatupdate() {
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        iteminit.ITEMS.register(bus);
+        
         MinecraftForge.EVENT_BUS.register(this);
+
+
+
     }
 
     
